@@ -1,0 +1,52 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Change the font to Poppins */
+}
+
+/* Ensure the body has a full height */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content at the top */
+    background-color: #0c7ca3; /* Change background color to a darker shade of blue */
+    color: #ffffff; /* Change text color to white */
+}
+
+/* Style for the text editor container */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center; /* Center align the container */
+}
+
+/* Style for the text editor */
+#editor {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #154360; /* Change background color to a darker shade of blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+    color: #ffffff; /* Change text color to white */
+}
+
+/* Hover effect */
+#editor:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus effect */
+#editor:focus {
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.5);
+}
